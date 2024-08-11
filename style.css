@@ -1,0 +1,81 @@
+body {
+  font-size: 15px;
+  margin: 10px 100px;
+  background-color: rgb(21, 32, 43);
+  color: white;
+  color-scheme: dark;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-sidebar {
+  font-size: 1.3rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 98vh;
+  /* overflow-y: auto; */
+  position: sticky;
+  top: 0;
+}
+
+.center-content {
+  flex: 2;
+  border: 1px grey solid;
+}
+
+.right-sidebar {
+  flex: 1;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation a,
+.left-sidebar a {
+  text-decoration: none;
+  color: inherit;
+  padding: 12px;
+}
+
+.navigation a i {
+  font-size: 1.5rem;
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+.rounded-button {
+  background-color: rgb(29, 155, 240);
+  border-radius: 50px;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+.personal-profile {
+  display: flex;
+  gap: 12px;
+}
+.personal-profile img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.personal-profile p {
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Hover effect for nav */
+.navigation a:hover,
+.personal-profile:hover {
+  background-color: rgba(121, 121, 121, 0.1);
+  border-radius: 50px;
+}
