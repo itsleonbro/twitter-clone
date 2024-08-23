@@ -1,8 +1,16 @@
+:root {
+  --primary-bg-color: #15202b; /* Dark Blue-Gray */
+  --text-color: #ffffff; /* White */
+  --button-bg-color: #1d9bf0; /* Bright Blue */
+  --hover-bg-color: rgba(79, 79, 79, 0.1); /* Light Gray with transparency */
+  --border-color: #37444d; /* Medium Gray */
+}
+
 body {
   font-size: 15px;
-  margin: 10px 100px;
-  background-color: rgb(21, 32, 43);
-  color: white;
+  margin: 0px 100px;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
   color-scheme: dark;
 }
 
@@ -17,19 +25,10 @@ body {
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  height: 98vh;
+  height: 100vh;
   /* overflow-y: auto; */
   position: sticky;
   top: 0;
-}
-
-.center-content {
-  flex: 2;
-  border: 1px grey solid;
-}
-
-.right-sidebar {
-  flex: 1;
 }
 
 .navigation {
@@ -51,7 +50,7 @@ body {
 }
 
 .rounded-button {
-  background-color: rgb(29, 155, 240);
+  background-color: var(--button-bg-color);
   border-radius: 50px;
   display: block;
   width: 200px;
@@ -62,6 +61,7 @@ body {
   display: flex;
   gap: 12px;
 }
+
 .personal-profile img {
   height: 40px;
   width: 40px;
@@ -76,6 +76,92 @@ body {
 /* Hover effect for nav */
 .navigation a:hover,
 .personal-profile:hover {
-  background-color: rgba(121, 121, 121, 0.1);
+  background-color: var(--hover-bg-color);
   border-radius: 50px;
+}
+
+/* center content */
+.center-content {
+  flex: 2;
+  border-left: 1px var(--border-color) solid;
+  border-right: 1px var(--border-color) solid;
+}
+
+.top-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.top-options .top-option-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+
+.top-option-btn p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.top-option-btn:hover {
+  background-color: var(--hover-bg-color);
+}
+
+.tweet-box {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+}
+
+.tweet-box .user-pic img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.tweet-inner-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.message-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  margin: 0 0 10px 0;
+}
+
+.message-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.message-icons a {
+  text-decoration: none;
+  color: var(--button-bg-color);
+}
+
+.post-icon {
+  background-color: var(--button-bg-color);
+  border-radius: 50px;
+  display: block;
+  padding: 7px 20px;
+  text-align: center;
+}
+
+/* right sidebar */
+.right-sidebar {
+  flex: 1;
 }
