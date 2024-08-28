@@ -1,0 +1,22 @@
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+
+# Temporary files
+*.tmp
+
+# MacOS
+.DS_Store
+
+# Thumbnails
+._*
+
+# Private files
+*.key
+*.pem
