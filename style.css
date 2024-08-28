@@ -171,9 +171,14 @@ body {
 .individual-tweets {
   display: flex;
   gap: 15px;
-  padding: 20px;
+  padding: 15px 20px;
   border-bottom: 1px solid var(--border-color);
 }
+
+.individual-tweets:hover {
+  cursor: pointer;
+}
+
 .individual-tweets p {
   margin: 0;
 }
@@ -209,6 +214,24 @@ body {
 .individual-tweets .user-tweet-media img {
   width: 100%;
   border-radius: 20px;
+}
+
+.user-tweet-icons {
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey-font);
+}
+
+.user-tweet-icons i {
+  font-style: normal;
+  display: flex;
+  align-items: center;
+}
+
+.user-tweet-icons i::after {
+  content: attr(data-text);
+  margin-left: 7px;
+  font-style: normal;
 }
 
 /* right sidebar */
