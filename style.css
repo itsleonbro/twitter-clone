@@ -5,6 +5,7 @@
   --hover-bg-color: rgba(79, 79, 79, 0.1); /* Light Gray with transparency */
   --border-color: #37444d; /* Medium Gray */
   --grey-font: #8a98a5;
+  --light-grey: #263340;
 }
 
 body {
@@ -237,4 +238,65 @@ body {
 /* right sidebar */
 .right-sidebar {
   flex: 1;
+  padding: 15px 20px;
+}
+
+.right-sidebar .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 10px 10px 10px 40px; /* padding on the left for the icon */
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: var(--light-grey);
+}
+
+.search-bar i {
+  position: absolute;
+  left: 10px;
+  font-size: 15px;
+  color: var(--grey-font);
+}
+
+.trends {
+  padding: 10px 15px;
+  border: 1px var(--border-color) solid;
+  border-radius: 15px;
+}
+
+.trends p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.individual-trends {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.trend-topic {
+  font-weight: 600;
+}
+
+.trend-heading,
+.trend-posts,
+.individual-trends i {
+  color: var(--grey-font);
+  font-size: 13px;
 }
