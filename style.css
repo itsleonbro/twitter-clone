@@ -290,6 +290,10 @@ body {
   margin: 20px 0;
 }
 
+.individual-trends:hover {
+  cursor: pointer;
+}
+
 .trend-topic {
   font-weight: 600;
 }
@@ -298,5 +302,27 @@ body {
 .trend-posts,
 .individual-trends i {
   color: var(--grey-font);
+  font-size: 13px;
+}
+
+/* footer */
+footer ul {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+footer li {
+  font-size: 13px;
+  color: var(--grey-font);
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: var(--grey-font);
+  text-decoration: none;
   font-size: 13px;
 }
